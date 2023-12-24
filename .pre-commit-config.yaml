@@ -1,0 +1,11 @@
+repos:
+  - repo: https://github.com/OCA/maintainer-tools
+    rev: 9a170331575a265c092ee6b24b845ec508e8ef75
+    hooks:
+      - id: oca-gen-addon-readme
+        args:
+          - --addons-dir=.
+          - --org-name=agungsepruloh
+          - --repo-name=product_barcode
+          - --branch=14.0
+      - id: oca-gen-addons-table
