@@ -1,0 +1,1 @@
+This module will help you to use product barcode and barcode scanner in purchase module.
