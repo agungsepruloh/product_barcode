@@ -1,0 +1,1 @@
+Base module for product barcode and barcode scanner.

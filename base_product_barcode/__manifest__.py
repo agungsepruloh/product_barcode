@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Sales Product Barcode",
+    'name': "Base Product Barcode",
 
     'summary': """
-        This module will help you to use product barcode and barcode scanner in sales module.
+        Base module for product barcode and barcode scanner.
     """,
 
     'description': """
-        This module will help you to use product barcode and barcode scanner in sales module.
+        Base module for product barcode and barcode scanner.
     """,
 
     'author': "Agung Sepruloh",
@@ -16,19 +16,15 @@
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/14.0/odoo/addons/base/data/ir_module_category_data.xml
     # for the full list
-    'category': 'Sales',
+    'category': 'Customizations',
     'version': '14.0.0.0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base', 'sale_management', 'base_product_barcode'],
+    'depends': ['base'],
 
     # always loaded
-    'data': [
-        'views/sale_order_line.xml',
-    ],
+    'data': [],
+
     # only loaded in demonstration mode
     'demo': [],
-
-    'images': ['static/description/banner.png'],
-    'application': True,
 }
