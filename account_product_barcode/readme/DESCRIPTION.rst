@@ -1,1 +1,1 @@
-This module will help you to use product barcode and barcode scanner in sales module.
+This module will help you to use product barcode and barcode scanner in the Invoicing module.
