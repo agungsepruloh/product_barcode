@@ -1,1 +1,1 @@
-This module will help you to use product barcode and barcode scanner in the Sales module.
+Sales Product Barcode enhances the functionality of the sales module by introducing robust barcode scanning support. With this module, users can seamlessly scan barcodes associated with products, significantly reducing manual data entry and minimizing errors. The integration of barcode scanning into the sales workflow optimizes efficiency, improves accuracy, and enhances overall productivity.
