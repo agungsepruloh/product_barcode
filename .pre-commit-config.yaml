@@ -7,5 +7,5 @@ repos:
           - --addons-dir=.
           - --org-name=agungsepruloh
           - --repo-name=product_barcode
-          - --branch=16.0
+          - --branch=17.0
       - id: oca-gen-addons-table
