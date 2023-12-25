@@ -6,8 +6,8 @@ To use this module, you need to:
     :alt: Product Form
     :width: 100%
 
-2. In the sales form, click on the barcode field and scan the product, now the item is added to the order line.
+2. In the invoice form, click on the barcode field and scan the product, now the item is added to the order line.
 
 .. image:: static/description/screenshot_2.png
-    :alt: Sales Form
+    :alt: Invoice Form
     :width: 100%
