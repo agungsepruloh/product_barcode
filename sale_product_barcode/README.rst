@@ -17,7 +17,7 @@ Sales Product Barcode
     :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
     :alt: License: AGPL-3
 .. |badge3| image:: https://img.shields.io/badge/github-agungsepruloh%2Fproduct_barcode-lightgray.png?logo=github
-    :target: https://github.com/agungsepruloh/product_barcode/tree/14.0/sale_product_barcode
+    :target: https://github.com/agungsepruloh/product_barcode/tree/15.0/sale_product_barcode
     :alt: agungsepruloh/product_barcode
 
 |badge1| |badge2| |badge3|
@@ -55,13 +55,13 @@ To use this module, you need to:
 
 1. Provide a barcode for the product
 
-.. image:: https://raw.githubusercontent.com/agungsepruloh/product_barcode/14.0/sale_product_barcode/static/description/screenshot_1.png
+.. image:: https://raw.githubusercontent.com/agungsepruloh/product_barcode/15.0/sale_product_barcode/static/description/screenshot_1.png
     :alt: Product Form
     :width: 100%
 
 2. In the sales form, click on the barcode field and scan the product, now the item is added to the order line.
 
-.. image:: https://raw.githubusercontent.com/agungsepruloh/product_barcode/14.0/sale_product_barcode/static/description/screenshot_2.png
+.. image:: https://raw.githubusercontent.com/agungsepruloh/product_barcode/15.0/sale_product_barcode/static/description/screenshot_2.png
     :alt: Sales Form
     :width: 100%
 
@@ -71,7 +71,7 @@ Bug Tracker
 Bugs are tracked on `GitHub Issues <https://github.com/agungsepruloh/product_barcode/issues>`_.
 In case of trouble, please check there if your issue has already been reported.
 If you spotted it first, help us to smash it by providing a detailed and welcomed
-`feedback <https://github.com/agungsepruloh/product_barcode/issues/new?body=module:%20sale_product_barcode%0Aversion:%2014.0%0A%0A**Steps%20to%20reproduce**%0A-%20...%0A%0A**Current%20behavior**%0A%0A**Expected%20behavior**>`_.
+`feedback <https://github.com/agungsepruloh/product_barcode/issues/new?body=module:%20sale_product_barcode%0Aversion:%2015.0%0A%0A**Steps%20to%20reproduce**%0A-%20...%0A%0A**Current%20behavior**%0A%0A**Expected%20behavior**>`_.
 
 Do not contact contributors directly about support or help with technical issues.
 
@@ -99,6 +99,6 @@ Current maintainer:
 
 |maintainer-agungsepruloh| 
 
-This module is part of the `agungsepruloh/product_barcode <https://github.com/agungsepruloh/product_barcode/tree/14.0/sale_product_barcode>`_ project on GitHub.
+This module is part of the `agungsepruloh/product_barcode <https://github.com/agungsepruloh/product_barcode/tree/15.0/sale_product_barcode>`_ project on GitHub.
 
 You are welcome to contribute.
