@@ -8,4 +8,5 @@ repos:
           - --org-name=agungsepruloh
           - --repo-name=product_barcode
           - --branch=17.0
+          - --if-source-changed
       - id: oca-gen-addons-table
