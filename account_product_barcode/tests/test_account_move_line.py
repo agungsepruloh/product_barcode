@@ -13,3 +13,8 @@ class TestAccountMoveLine(common.TransactionCase):
         account_move_line = self.AccountMoveLine.new({'product_barcode': '123456789'})
         account_move_line._onchange_product_barcode()
         self.assertEqual(account_move_line.product_id, self.product)
+
+    def test_onchange_product_id(self):
+        account_move_line = self.AccountMoveLine.new({'product_id': self.product.id})
+        account_move_line._onchange_product_id()
+        self.assertEqual(account_move_line.product_barcode, self.product.barcode)
