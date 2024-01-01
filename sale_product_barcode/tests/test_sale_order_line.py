@@ -14,6 +14,15 @@ class TestSaleOrderLine(common.TransactionCase):
         sale_order_line._onchange_product_barcode()
         self.assertEqual(sale_order_line.product_id, self.product)
 
-    def test_create(self):
+    def test_onchange_product_id(self):
+        sale_order_line = self.SaleOrderLine.new({'product_id': self.product.id})
+        sale_order_line._onchange_product_id()
+        self.assertEqual(sale_order_line.product_barcode, self.product.barcode)
+
+    def test_create_product_barcode(self):
         sale_order_line = self.SaleOrderLine.create({'product_barcode': '123456789', 'order_id': self.sale_order.id})
         self.assertEqual(sale_order_line.product_id, self.product)
+
+    def test_create_product_id(self):
+        sale_order_line = self.SaleOrderLine.create({'product_id': self.product.id, 'order_id': self.sale_order.id})
+        self.assertEqual(sale_order_line.product_barcode, self.product.barcode)

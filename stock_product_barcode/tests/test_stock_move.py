@@ -18,7 +18,12 @@ class TestStockMove(common.TransactionCase):
         stock_move._onchange_product_barcode()
         self.assertEqual(stock_move.product_id, self.product)
 
-    def test_create(self):
+    def test_onchange_product_id(self):
+        stock_move = self.StockMove.new({'product_id': self.product.id})
+        stock_move._onchange_product_id()
+        self.assertEqual(stock_move.product_barcode, self.product.barcode)
+
+    def test_create_product_barcode(self):
         stock_move = self.StockMove.create({
             'name': 'Test Stock Move',
             'product_barcode': '123456789',
@@ -28,3 +33,14 @@ class TestStockMove(common.TransactionCase):
             'location_dest_id': self.stock_picking.location_dest_id.id,
         })
         self.assertEqual(stock_move.product_id, self.product)
+
+    def test_create_product_id(self):
+        stock_move = self.StockMove.create({
+            'name': 'Test Stock Move',
+            'product_id': self.product.id,
+            'picking_id': self.stock_picking.id,
+            'product_uom': self.product.uom_id.id,
+            'location_id': self.stock_picking.location_id.id,
+            'location_dest_id': self.stock_picking.location_dest_id.id,
+        })
+        self.assertEqual(stock_move.product_barcode, self.product.barcode)
