@@ -1,16 +1,19 @@
-from odoo.tests import common
+from odoo.tests import common, tagged
 
 
+@tagged('post_install', '-at_install')
 class TestStockMove(common.TransactionCase):
     def setUp(self):
-        super(TestStockMove, self).setUp()
+        super().setUp()
         self.StockMove = self.env['stock.move']
-        self.product = self.env.ref('product.product_product_25')
-        self.product.barcode = '123456789'
+        self.product = self.env['product.product'].create({
+            'name': 'Barcode Test Product',
+            'barcode': '123456789',
+        })
         self.stock_picking = self.env['stock.picking'].create({
             'picking_type_id': self.env.ref('stock.picking_type_in').id,
-            'location_id': self.env.ref('stock.stock_location_stock').id,
-            'location_dest_id': self.env.ref('stock.stock_location_suppliers').id,
+            'location_id': self.env.ref('stock.stock_location_suppliers').id,
+            'location_dest_id': self.env.ref('stock.stock_location_stock').id,
         })
 
     def test_onchange_product_barcode(self):
