@@ -28,9 +28,9 @@ class TestStockMove(common.TransactionCase):
 
     def test_create_product_barcode(self):
         stock_move = self.StockMove.create({
-            'name': 'Test Stock Move',
             'product_barcode': '123456789',
             'picking_id': self.stock_picking.id,
+            'product_uom_qty': 1.0,
             'product_uom': self.product.uom_id.id,
             'location_id': self.stock_picking.location_id.id,
             'location_dest_id': self.stock_picking.location_dest_id.id,
@@ -39,9 +39,9 @@ class TestStockMove(common.TransactionCase):
 
     def test_create_product_id(self):
         stock_move = self.StockMove.create({
-            'name': 'Test Stock Move',
             'product_id': self.product.id,
             'picking_id': self.stock_picking.id,
+            'product_uom_qty': 1.0,
             'product_uom': self.product.uom_id.id,
             'location_id': self.stock_picking.location_id.id,
             'location_dest_id': self.stock_picking.location_dest_id.id,
